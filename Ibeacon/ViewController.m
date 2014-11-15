@@ -15,6 +15,8 @@
 @property CLLocationManager *locationManager;
 @property NSMutableDictionary *rangedRegions;
 
+@property (nonatomic, strong) UILabel *distanceLabel;
+
 @end
 
 @implementation ViewController
@@ -25,7 +27,10 @@
     
     self.wcAddress.hidden = true;
     self.escalatorAddress.hidden = true;
-
+    [_mylocation.layer setCornerRadius:CGRectGetWidth(_mylocation.frame)/2];
+    _distanceLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 420, 300, 30)];
+    _distanceLabel.textColor = [UIColor blueColor];
+    [self.view addSubview:_distanceLabel];
     [self initIbeacon];
 }
 
@@ -87,7 +92,37 @@
         }
     }
     
-    NSLog(@"beacons : %@",self.beacons);
+//    NSLog(@"beacons : %@",self.beacons)÷
+    
+    if (self.beacons.count) {
+        // Display the UUID, major, minor and accuracy for each beacon.
+        NSNumber *sectionKey = [self.beacons allKeys][0];
+        CLBeacon *beacon = self.beacons[sectionKey][0];
+        //    cell.textLabel.text = [beacon.proximityUUID UUIDString];
+        
+        NSString *formatString = NSLocalizedString(@"Acc: %.2fm, RSSI : %d", @"Format string for ranging table cells.");
+        _distanceLabel.text = [NSString stringWithFormat:@"Acc: %.2fm, RSSI : %d",beacon.accuracy, beacon.rssi];
+        
+        NSString *temp = [NSString stringWithFormat:@"%.2f",beacon.accuracy];
+        
+        NSInteger yy = sqrt(([temp floatValue]*1000)*([temp floatValue]*1000) - 80*80);
+        
+//        NSLog(@"%.2f",(beacon.accuracy*1000)*(beacon.accuracy)*1000);
+        NSLog(@"xxx:%d",yy);
+        if (yy > 0) {
+            CGRect frame = _mylocation.frame;
+//            frame.origin.x = _wcAddress.center.x+80;
+            frame.origin.y = 212+[temp floatValue]*100;
+            _mylocation.frame = frame;
+            
+//            [_mylocation setTitle:[NSString stringWithFormat:@"%.2fm",beacon.accuracy] forState:UIControlStateNormal];
+        }
+        
+
+    }
+
+    
+    
     
 }
 
