@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>address</key>
+		<string>A301</string>
+		<key>name</key>
+		<string>冬装优惠</string>
+		<key>image</key>
+		<string>SouthAfrica</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>B232</string>
+		<key>name</key>
+		<string>圣诞节礼物</string>
+		<key>image</key>
+		<string>Mexico</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>D区二座231</string>
+		<key>name</key>
+		<string>外婆家新开业7折优惠</string>
+		<key>image</key>
+		<string>Argentina</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>A11</string>
+		<key>name</key>
+		<string>茶点买一送一</string>
+		<key>image</key>
+		<string>Nigeria</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>C89</string>
+		<key>name</key>
+		<string>开业优惠(大大咖啡)</string>
+		<key>image</key>
+		<string>England</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>G90</string>
+		<key>name</key>
+		<string>冬装特惠</string>
+		<key>image</key>
+		<string>USA</string>
+	</dict>
+	<dict>
+		<key>address</key>
+		<string>商场负一201</string>
+		<key>name</key>
+		<string>绿茶开业酬宾</string>
+		<key>image</key>
+		<string>Germany</string>
+	</dict>
+</array>
+</plist>

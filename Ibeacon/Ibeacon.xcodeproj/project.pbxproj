@@ -57,10 +57,6 @@
 		190071F01A17381200165971 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071EF1A17381200165971 /* CustomCell.m */; };
 		190071F21A17387A00165971 /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = 190071F11A17387A00165971 /* team.plist */; };
 		190071F51A1744F200165971 /* CompanyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071F41A1744F200165971 /* CompanyDetailViewController.m */; };
-		3719028D1A1757D600F53C0E /* APLRangingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3719028C1A1757D600F53C0E /* APLRangingViewController.m */; };
-		3719028F1A1757EA00F53C0E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */; };
-		371902911A17580700F53C0E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371902901A17580700F53C0E /* CoreLocation.framework */; };
-		371902971A1758D000F53C0E /* APLDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 371902961A1758D000F53C0E /* APLDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,12 +128,6 @@
 		190071F11A17387A00165971 /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
 		190071F31A1744F200165971 /* CompanyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyDetailViewController.h; sourceTree = "<group>"; };
 		190071F41A1744F200165971 /* CompanyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyDetailViewController.m; sourceTree = "<group>"; };
-		3719028B1A1757D600F53C0E /* APLRangingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLRangingViewController.h; sourceTree = "<group>"; };
-		3719028C1A1757D600F53C0E /* APLRangingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLRangingViewController.m; sourceTree = "<group>"; };
-		3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		371902901A17580700F53C0E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		371902951A1758D000F53C0E /* APLDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLDefaults.h; sourceTree = "<group>"; };
-		371902961A1758D000F53C0E /* APLDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLDefaults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				371902911A17580700F53C0E /* CoreLocation.framework in Frameworks */,
-				3719028F1A1757EA00F53C0E /* CoreBluetooth.framework in Frameworks */,
 				190071781A1731FD00165971 /* CoreGraphics.framework in Frameworks */,
 				1900717A1A1731FD00165971 /* UIKit.framework in Frameworks */,
 				190071761A1731FD00165971 /* Foundation.framework in Frameworks */,
@@ -188,8 +176,6 @@
 		190071741A1731FD00165971 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				371902901A17580700F53C0E /* CoreLocation.framework */,
-				3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */,
 				190071751A1731FD00165971 /* Foundation.framework */,
 				190071771A1731FD00165971 /* CoreGraphics.framework */,
 				190071791A1731FD00165971 /* UIKit.framework */,
@@ -201,10 +187,6 @@
 		1900717B1A1731FD00165971 /* Ibeacon */ = {
 			isa = PBXGroup;
 			children = (
-				371902951A1758D000F53C0E /* APLDefaults.h */,
-				371902961A1758D000F53C0E /* APLDefaults.m */,
-				3719028B1A1757D600F53C0E /* APLRangingViewController.h */,
-				3719028C1A1757D600F53C0E /* APLRangingViewController.m */,
 				190071F11A17387A00165971 /* team.plist */,
 				190071EF1A17381200165971 /* CustomCell.m */,
 				190071EE1A17380B00165971 /* CustomCell.h */,
@@ -424,10 +406,8 @@
 			files = (
 				1900718C1A1731FD00165971 /* ViewController.m in Sources */,
 				190071F51A1744F200165971 /* CompanyDetailViewController.m in Sources */,
-				3719028D1A1757D600F53C0E /* APLRangingViewController.m in Sources */,
 				190071AC1A17334500165971 /* CompanyTableViewController.m in Sources */,
 				190071861A1731FD00165971 /* AppDelegate.m in Sources */,
-				371902971A1758D000F53C0E /* APLDefaults.m in Sources */,
 				190071821A1731FD00165971 /* main.m in Sources */,
 				190071F01A17381200165971 /* CustomCell.m in Sources */,
 			);
@@ -634,7 +614,6 @@
 				190071A61A1731FD00165971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		190071A71A1731FD00165971 /* Build configuration list for PBXNativeTarget "IbeaconTests" */ = {
 			isa = XCConfigurationList;
@@ -643,7 +622,6 @@
 				190071A91A1731FD00165971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
