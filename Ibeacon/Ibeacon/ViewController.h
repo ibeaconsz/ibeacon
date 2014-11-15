@@ -12,7 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *escalatorAddress;
 @property (strong, nonatomic) IBOutlet UIButton *wcAddress;
-@property (strong, nonatomic) IBOutlet UIButton *mylocation;
 
 - (IBAction)wcAction:(id)sender;
 
