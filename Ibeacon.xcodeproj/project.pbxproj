@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		190071761A1731FD00165971 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190071751A1731FD00165971 /* Foundation.framework */; };
+		190071781A1731FD00165971 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190071771A1731FD00165971 /* CoreGraphics.framework */; };
+		1900717A1A1731FD00165971 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190071791A1731FD00165971 /* UIKit.framework */; };
+		190071801A1731FD00165971 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1900717E1A1731FD00165971 /* InfoPlist.strings */; };
+		190071821A1731FD00165971 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071811A1731FD00165971 /* main.m */; };
+		190071861A1731FD00165971 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071851A1731FD00165971 /* AppDelegate.m */; };
+		190071891A1731FD00165971 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190071871A1731FD00165971 /* Main.storyboard */; };
+		1900718C1A1731FD00165971 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1900718B1A1731FD00165971 /* ViewController.m */; };
+		1900718E1A1731FD00165971 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1900718D1A1731FD00165971 /* Images.xcassets */; };
+		190071951A1731FD00165971 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190071941A1731FD00165971 /* XCTest.framework */; };
+		190071961A1731FD00165971 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190071751A1731FD00165971 /* Foundation.framework */; };
+		190071971A1731FD00165971 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 190071791A1731FD00165971 /* UIKit.framework */; };
+		1900719F1A1731FD00165971 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1900719D1A1731FD00165971 /* InfoPlist.strings */; };
+		190071A11A1731FD00165971 /* IbeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071A01A1731FD00165971 /* IbeaconTests.m */; };
+		190071AC1A17334500165971 /* CompanyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071AB1A17334500165971 /* CompanyTableViewController.m */; };
+		190071CE1A1737EF00165971 /* Algeria.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071AE1A1737EF00165971 /* Algeria.png */; };
+		190071CF1A1737EF00165971 /* Argentina.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071AF1A1737EF00165971 /* Argentina.png */; };
+		190071D01A1737EF00165971 /* Australia.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B01A1737EF00165971 /* Australia.png */; };
+		190071D11A1737EF00165971 /* Brazil.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B11A1737EF00165971 /* Brazil.png */; };
+		190071D21A1737EF00165971 /* Cameroon.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B21A1737EF00165971 /* Cameroon.png */; };
+		190071D31A1737EF00165971 /* Chile.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B31A1737EF00165971 /* Chile.png */; };
+		190071D41A1737EF00165971 /* CoteDIvoire.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B41A1737EF00165971 /* CoteDIvoire.png */; };
+		190071D51A1737EF00165971 /* Denmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B51A1737EF00165971 /* Denmark.png */; };
+		190071D61A1737EF00165971 /* England.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B61A1737EF00165971 /* England.png */; };
+		190071D71A1737EF00165971 /* France.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B71A1737EF00165971 /* France.png */; };
+		190071D81A1737EF00165971 /* Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B81A1737EF00165971 /* Germany.png */; };
+		190071D91A1737EF00165971 /* Ghana.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071B91A1737EF00165971 /* Ghana.png */; };
+		190071DA1A1737EF00165971 /* Greece.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071BA1A1737EF00165971 /* Greece.png */; };
+		190071DB1A1737EF00165971 /* Holland.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071BB1A1737EF00165971 /* Holland.png */; };
+		190071DC1A1737EF00165971 /* Honduras.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071BC1A1737EF00165971 /* Honduras.png */; };
+		190071DD1A1737EF00165971 /* Italy.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071BD1A1737EF00165971 /* Italy.png */; };
+		190071DE1A1737EF00165971 /* Japan.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071BE1A1737EF00165971 /* Japan.png */; };
+		190071DF1A1737EF00165971 /* Mexico.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071BF1A1737EF00165971 /* Mexico.png */; };
+		190071E01A1737EF00165971 /* NewZealand.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C01A1737EF00165971 /* NewZealand.png */; };
+		190071E11A1737EF00165971 /* Nigeria.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C11A1737EF00165971 /* Nigeria.png */; };
+		190071E21A1737EF00165971 /* NorthKorea.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C21A1737EF00165971 /* NorthKorea.png */; };
+		190071E31A1737EF00165971 /* Paraguay.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C31A1737EF00165971 /* Paraguay.png */; };
+		190071E41A1737EF00165971 /* Portugal.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C41A1737EF00165971 /* Portugal.png */; };
+		190071E51A1737EF00165971 /* Serbia.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C51A1737EF00165971 /* Serbia.png */; };
+		190071E61A1737EF00165971 /* Slovakia.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C61A1737EF00165971 /* Slovakia.png */; };
+		190071E71A1737EF00165971 /* Slovenia.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C71A1737EF00165971 /* Slovenia.png */; };
+		190071E81A1737EF00165971 /* SouthAfrica.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C81A1737EF00165971 /* SouthAfrica.png */; };
+		190071E91A1737EF00165971 /* SouthKorea.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071C91A1737EF00165971 /* SouthKorea.png */; };
+		190071EA1A1737EF00165971 /* Spain.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071CA1A1737EF00165971 /* Spain.png */; };
+		190071EB1A1737EF00165971 /* Switzerland.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071CB1A1737EF00165971 /* Switzerland.png */; };
+		190071EC1A1737EF00165971 /* Uruguay.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071CC1A1737EF00165971 /* Uruguay.png */; };
+		190071ED1A1737EF00165971 /* USA.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071CD1A1737EF00165971 /* USA.png */; };
+		190071F01A17381200165971 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071EF1A17381200165971 /* CustomCell.m */; };
+		190071F21A17387A00165971 /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = 190071F11A17387A00165971 /* team.plist */; };
+		190071F51A1744F200165971 /* CompanyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071F41A1744F200165971 /* CompanyDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		190071981A1731FD00165971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1900716A1A1731FD00165971 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 190071711A1731FD00165971;
+			remoteInfo = Ibeacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190071721A1731FD00165971 /* Ibeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ibeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		190071751A1731FD00165971 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		190071771A1731FD00165971 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		190071791A1731FD00165971 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1900717D1A1731FD00165971 /* Ibeacon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ibeacon-Info.plist"; sourceTree = "<group>"; };
+		1900717F1A1731FD00165971 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		190071811A1731FD00165971 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		190071831A1731FD00165971 /* Ibeacon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ibeacon-Prefix.pch"; sourceTree = "<group>"; };
+		190071841A1731FD00165971 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		190071851A1731FD00165971 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		190071881A1731FD00165971 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1900718A1A1731FD00165971 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1900718B1A1731FD00165971 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1900718D1A1731FD00165971 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		190071931A1731FD00165971 /* IbeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IbeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		190071941A1731FD00165971 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1900719C1A1731FD00165971 /* IbeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IbeaconTests-Info.plist"; sourceTree = "<group>"; };
+		1900719E1A1731FD00165971 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		190071A01A1731FD00165971 /* IbeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IbeaconTests.m; sourceTree = "<group>"; };
+		190071AA1A17334500165971 /* CompanyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyTableViewController.h; sourceTree = "<group>"; };
+		190071AB1A17334500165971 /* CompanyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyTableViewController.m; sourceTree = "<group>"; };
+		190071AE1A1737EF00165971 /* Algeria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Algeria.png; sourceTree = "<group>"; };
+		190071AF1A1737EF00165971 /* Argentina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Argentina.png; sourceTree = "<group>"; };
+		190071B01A1737EF00165971 /* Australia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Australia.png; sourceTree = "<group>"; };
+		190071B11A1737EF00165971 /* Brazil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brazil.png; sourceTree = "<group>"; };
+		190071B21A1737EF00165971 /* Cameroon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cameroon.png; sourceTree = "<group>"; };
+		190071B31A1737EF00165971 /* Chile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chile.png; sourceTree = "<group>"; };
+		190071B41A1737EF00165971 /* CoteDIvoire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CoteDIvoire.png; sourceTree = "<group>"; };
+		190071B51A1737EF00165971 /* Denmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Denmark.png; sourceTree = "<group>"; };
+		190071B61A1737EF00165971 /* England.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = England.png; sourceTree = "<group>"; };
+		190071B71A1737EF00165971 /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = France.png; sourceTree = "<group>"; };
+		190071B81A1737EF00165971 /* Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Germany.png; sourceTree = "<group>"; };
+		190071B91A1737EF00165971 /* Ghana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ghana.png; sourceTree = "<group>"; };
+		190071BA1A1737EF00165971 /* Greece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Greece.png; sourceTree = "<group>"; };
+		190071BB1A1737EF00165971 /* Holland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holland.png; sourceTree = "<group>"; };
+		190071BC1A1737EF00165971 /* Honduras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Honduras.png; sourceTree = "<group>"; };
+		190071BD1A1737EF00165971 /* Italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Italy.png; sourceTree = "<group>"; };
+		190071BE1A1737EF00165971 /* Japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Japan.png; sourceTree = "<group>"; };
+		190071BF1A1737EF00165971 /* Mexico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mexico.png; sourceTree = "<group>"; };
+		190071C01A1737EF00165971 /* NewZealand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewZealand.png; sourceTree = "<group>"; };
+		190071C11A1737EF00165971 /* Nigeria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nigeria.png; sourceTree = "<group>"; };
+		190071C21A1737EF00165971 /* NorthKorea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NorthKorea.png; sourceTree = "<group>"; };
+		190071C31A1737EF00165971 /* Paraguay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paraguay.png; sourceTree = "<group>"; };
+		190071C41A1737EF00165971 /* Portugal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Portugal.png; sourceTree = "<group>"; };
+		190071C51A1737EF00165971 /* Serbia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Serbia.png; sourceTree = "<group>"; };
+		190071C61A1737EF00165971 /* Slovakia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slovakia.png; sourceTree = "<group>"; };
+		190071C71A1737EF00165971 /* Slovenia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slovenia.png; sourceTree = "<group>"; };
+		190071C81A1737EF00165971 /* SouthAfrica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SouthAfrica.png; sourceTree = "<group>"; };
+		190071C91A1737EF00165971 /* SouthKorea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SouthKorea.png; sourceTree = "<group>"; };
+		190071CA1A1737EF00165971 /* Spain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spain.png; sourceTree = "<group>"; };
+		190071CB1A1737EF00165971 /* Switzerland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Switzerland.png; sourceTree = "<group>"; };
+		190071CC1A1737EF00165971 /* Uruguay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Uruguay.png; sourceTree = "<group>"; };
+		190071CD1A1737EF00165971 /* USA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USA.png; sourceTree = "<group>"; };
+		190071EE1A17380B00165971 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		190071EF1A17381200165971 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		190071F11A17387A00165971 /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
+		190071F31A1744F200165971 /* CompanyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyDetailViewController.h; sourceTree = "<group>"; };
+		190071F41A1744F200165971 /* CompanyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1900716F1A1731FD00165971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190071781A1731FD00165971 /* CoreGraphics.framework in Frameworks */,
+				1900717A1A1731FD00165971 /* UIKit.framework in Frameworks */,
+				190071761A1731FD00165971 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190071901A1731FD00165971 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190071951A1731FD00165971 /* XCTest.framework in Frameworks */,
+				190071971A1731FD00165971 /* UIKit.framework in Frameworks */,
+				190071961A1731FD00165971 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		190071691A1731FD00165971 = {
+			isa = PBXGroup;
+			children = (
+				1900717B1A1731FD00165971 /* Ibeacon */,
+				1900719A1A1731FD00165971 /* IbeaconTests */,
+				190071741A1731FD00165971 /* Frameworks */,
+				190071731A1731FD00165971 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		190071731A1731FD00165971 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				190071721A1731FD00165971 /* Ibeacon.app */,
+				190071931A1731FD00165971 /* IbeaconTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		190071741A1731FD00165971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				190071751A1731FD00165971 /* Foundation.framework */,
+				190071771A1731FD00165971 /* CoreGraphics.framework */,
+				190071791A1731FD00165971 /* UIKit.framework */,
+				190071941A1731FD00165971 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1900717B1A1731FD00165971 /* Ibeacon */ = {
+			isa = PBXGroup;
+			children = (
+				190071F11A17387A00165971 /* team.plist */,
+				190071EF1A17381200165971 /* CustomCell.m */,
+				190071EE1A17380B00165971 /* CustomCell.h */,
+				190071AD1A1737EF00165971 /* 球队图片 */,
+				190071841A1731FD00165971 /* AppDelegate.h */,
+				190071851A1731FD00165971 /* AppDelegate.m */,
+				190071871A1731FD00165971 /* Main.storyboard */,
+				1900718A1A1731FD00165971 /* ViewController.h */,
+				1900718B1A1731FD00165971 /* ViewController.m */,
+				1900718D1A1731FD00165971 /* Images.xcassets */,
+				1900717C1A1731FD00165971 /* Supporting Files */,
+				190071AA1A17334500165971 /* CompanyTableViewController.h */,
+				190071AB1A17334500165971 /* CompanyTableViewController.m */,
+				190071F31A1744F200165971 /* CompanyDetailViewController.h */,
+				190071F41A1744F200165971 /* CompanyDetailViewController.m */,
+			);
+			path = Ibeacon;
+			sourceTree = "<group>";
+		};
+		1900717C1A1731FD00165971 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1900717D1A1731FD00165971 /* Ibeacon-Info.plist */,
+				1900717E1A1731FD00165971 /* InfoPlist.strings */,
+				190071811A1731FD00165971 /* main.m */,
+				190071831A1731FD00165971 /* Ibeacon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1900719A1A1731FD00165971 /* IbeaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				190071A01A1731FD00165971 /* IbeaconTests.m */,
+				1900719B1A1731FD00165971 /* Supporting Files */,
+			);
+			path = IbeaconTests;
+			sourceTree = "<group>";
+		};
+		1900719B1A1731FD00165971 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1900719C1A1731FD00165971 /* IbeaconTests-Info.plist */,
+				1900719D1A1731FD00165971 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		190071AD1A1737EF00165971 /* 球队图片 */ = {
+			isa = PBXGroup;
+			children = (
+				190071AE1A1737EF00165971 /* Algeria.png */,
+				190071AF1A1737EF00165971 /* Argentina.png */,
+				190071B01A1737EF00165971 /* Australia.png */,
+				190071B11A1737EF00165971 /* Brazil.png */,
+				190071B21A1737EF00165971 /* Cameroon.png */,
+				190071B31A1737EF00165971 /* Chile.png */,
+				190071B41A1737EF00165971 /* CoteDIvoire.png */,
+				190071B51A1737EF00165971 /* Denmark.png */,
+				190071B61A1737EF00165971 /* England.png */,
+				190071B71A1737EF00165971 /* France.png */,
+				190071B81A1737EF00165971 /* Germany.png */,
+				190071B91A1737EF00165971 /* Ghana.png */,
+				190071BA1A1737EF00165971 /* Greece.png */,
+				190071BB1A1737EF00165971 /* Holland.png */,
+				190071BC1A1737EF00165971 /* Honduras.png */,
+				190071BD1A1737EF00165971 /* Italy.png */,
+				190071BE1A1737EF00165971 /* Japan.png */,
+				190071BF1A1737EF00165971 /* Mexico.png */,
+				190071C01A1737EF00165971 /* NewZealand.png */,
+				190071C11A1737EF00165971 /* Nigeria.png */,
+				190071C21A1737EF00165971 /* NorthKorea.png */,
+				190071C31A1737EF00165971 /* Paraguay.png */,
+				190071C41A1737EF00165971 /* Portugal.png */,
+				190071C51A1737EF00165971 /* Serbia.png */,
+				190071C61A1737EF00165971 /* Slovakia.png */,
+				190071C71A1737EF00165971 /* Slovenia.png */,
+				190071C81A1737EF00165971 /* SouthAfrica.png */,
+				190071C91A1737EF00165971 /* SouthKorea.png */,
+				190071CA1A1737EF00165971 /* Spain.png */,
+				190071CB1A1737EF00165971 /* Switzerland.png */,
+				190071CC1A1737EF00165971 /* Uruguay.png */,
+				190071CD1A1737EF00165971 /* USA.png */,
+			);
+			path = "球队图片";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		190071711A1731FD00165971 /* Ibeacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190071A41A1731FD00165971 /* Build configuration list for PBXNativeTarget "Ibeacon" */;
+			buildPhases = (
+				1900716E1A1731FD00165971 /* Sources */,
+				1900716F1A1731FD00165971 /* Frameworks */,
+				190071701A1731FD00165971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ibeacon;
+			productName = Ibeacon;
+			productReference = 190071721A1731FD00165971 /* Ibeacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		190071921A1731FD00165971 /* IbeaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 190071A71A1731FD00165971 /* Build configuration list for PBXNativeTarget "IbeaconTests" */;
+			buildPhases = (
+				1900718F1A1731FD00165971 /* Sources */,
+				190071901A1731FD00165971 /* Frameworks */,
+				190071911A1731FD00165971 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190071991A1731FD00165971 /* PBXTargetDependency */,
+			);
+			name = IbeaconTests;
+			productName = IbeaconTests;
+			productReference = 190071931A1731FD00165971 /* IbeaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1900716A1A1731FD00165971 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = chenwg.com;
+				TargetAttributes = {
+					190071921A1731FD00165971 = {
+						TestTargetID = 190071711A1731FD00165971;
+					};
+				};
+			};
+			buildConfigurationList = 1900716D1A1731FD00165971 /* Build configuration list for PBXProject "Ibeacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 190071691A1731FD00165971;
+			productRefGroup = 190071731A1731FD00165971 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				190071711A1731FD00165971 /* Ibeacon */,
+				190071921A1731FD00165971 /* IbeaconTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		190071701A1731FD00165971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190071ED1A1737EF00165971 /* USA.png in Resources */,
+				1900718E1A1731FD00165971 /* Images.xcassets in Resources */,
+				190071CF1A1737EF00165971 /* Argentina.png in Resources */,
+				190071EC1A1737EF00165971 /* Uruguay.png in Resources */,
+				190071DD1A1737EF00165971 /* Italy.png in Resources */,
+				190071E41A1737EF00165971 /* Portugal.png in Resources */,
+				190071DB1A1737EF00165971 /* Holland.png in Resources */,
+				190071D01A1737EF00165971 /* Australia.png in Resources */,
+				190071D81A1737EF00165971 /* Germany.png in Resources */,
+				190071E21A1737EF00165971 /* NorthKorea.png in Resources */,
+				190071D61A1737EF00165971 /* England.png in Resources */,
+				190071D51A1737EF00165971 /* Denmark.png in Resources */,
+				190071EB1A1737EF00165971 /* Switzerland.png in Resources */,
+				190071E51A1737EF00165971 /* Serbia.png in Resources */,
+				190071DC1A1737EF00165971 /* Honduras.png in Resources */,
+				190071E11A1737EF00165971 /* Nigeria.png in Resources */,
+				190071E61A1737EF00165971 /* Slovakia.png in Resources */,
+				190071E91A1737EF00165971 /* SouthKorea.png in Resources */,
+				190071DF1A1737EF00165971 /* Mexico.png in Resources */,
+				190071F21A17387A00165971 /* team.plist in Resources */,
+				190071D21A1737EF00165971 /* Cameroon.png in Resources */,
+				190071DE1A1737EF00165971 /* Japan.png in Resources */,
+				190071801A1731FD00165971 /* InfoPlist.strings in Resources */,
+				190071DA1A1737EF00165971 /* Greece.png in Resources */,
+				190071E01A1737EF00165971 /* NewZealand.png in Resources */,
+				190071D71A1737EF00165971 /* France.png in Resources */,
+				190071891A1731FD00165971 /* Main.storyboard in Resources */,
+				190071EA1A1737EF00165971 /* Spain.png in Resources */,
+				190071D11A1737EF00165971 /* Brazil.png in Resources */,
+				190071D91A1737EF00165971 /* Ghana.png in Resources */,
+				190071D41A1737EF00165971 /* CoteDIvoire.png in Resources */,
+				190071D31A1737EF00165971 /* Chile.png in Resources */,
+				190071CE1A1737EF00165971 /* Algeria.png in Resources */,
+				190071E81A1737EF00165971 /* SouthAfrica.png in Resources */,
+				190071E71A1737EF00165971 /* Slovenia.png in Resources */,
+				190071E31A1737EF00165971 /* Paraguay.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190071911A1731FD00165971 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1900719F1A1731FD00165971 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1900716E1A1731FD00165971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1900718C1A1731FD00165971 /* ViewController.m in Sources */,
+				190071F51A1744F200165971 /* CompanyDetailViewController.m in Sources */,
+				190071AC1A17334500165971 /* CompanyTableViewController.m in Sources */,
+				190071861A1731FD00165971 /* AppDelegate.m in Sources */,
+				190071821A1731FD00165971 /* main.m in Sources */,
+				190071F01A17381200165971 /* CustomCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1900718F1A1731FD00165971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190071A11A1731FD00165971 /* IbeaconTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		190071991A1731FD00165971 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 190071711A1731FD00165971 /* Ibeacon */;
+			targetProxy = 190071981A1731FD00165971 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1900717E1A1731FD00165971 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1900717F1A1731FD00165971 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		190071871A1731FD00165971 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				190071881A1731FD00165971 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1900719D1A1731FD00165971 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1900719E1A1731FD00165971 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		190071A21A1731FD00165971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		190071A31A1731FD00165971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		190071A51A1731FD00165971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ibeacon/Ibeacon-Prefix.pch";
+				INFOPLIST_FILE = "Ibeacon/Ibeacon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		190071A61A1731FD00165971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ibeacon/Ibeacon-Prefix.pch";
+				INFOPLIST_FILE = "Ibeacon/Ibeacon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		190071A81A1731FD00165971 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ibeacon.app/Ibeacon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ibeacon/Ibeacon-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "IbeaconTests/IbeaconTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		190071A91A1731FD00165971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ibeacon.app/Ibeacon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ibeacon/Ibeacon-Prefix.pch";
+				INFOPLIST_FILE = "IbeaconTests/IbeaconTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1900716D1A1731FD00165971 /* Build configuration list for PBXProject "Ibeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190071A21A1731FD00165971 /* Debug */,
+				190071A31A1731FD00165971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		190071A41A1731FD00165971 /* Build configuration list for PBXNativeTarget "Ibeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190071A51A1731FD00165971 /* Debug */,
+				190071A61A1731FD00165971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		190071A71A1731FD00165971 /* Build configuration list for PBXNativeTarget "IbeaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				190071A81A1731FD00165971 /* Debug */,
+				190071A91A1731FD00165971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1900716A1A1731FD00165971 /* Project object */;
+}
