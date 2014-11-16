@@ -80,6 +80,7 @@
 		3719028F1A1757EA00F53C0E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */; };
 		371902911A17580700F53C0E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371902901A17580700F53C0E /* CoreLocation.framework */; };
 		371902971A1758D000F53C0E /* APLDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 371902961A1758D000F53C0E /* APLDefaults.m */; };
+		37FC85E11A18614F00D9AD24 /* 地图2.png in Resources */ = {isa = PBXBuildFile; fileRef = 37FC85E01A18614F00D9AD24 /* 地图2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +184,7 @@
 		371902901A17580700F53C0E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		371902951A1758D000F53C0E /* APLDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLDefaults.h; sourceTree = "<group>"; };
 		371902961A1758D000F53C0E /* APLDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLDefaults.m; sourceTree = "<group>"; };
+		37FC85E01A18614F00D9AD24 /* 地图2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地图2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +355,7 @@
 		1900721A1A183B6600165971 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				37FC85E01A18614F00D9AD24 /* 地图2.png */,
 				1900723B1A185BA600165971 /* 地图.png */,
 				190072391A184D6200165971 /* 我的收藏商店.png */,
 				190072371A184CD500165971 /* 我的profile.png */,
@@ -517,6 +520,7 @@
 				190071D41A1737EF00165971 /* CoteDIvoire.png in Resources */,
 				190071D31A1737EF00165971 /* Chile.png in Resources */,
 				190071CE1A1737EF00165971 /* Algeria.png in Resources */,
+				37FC85E11A18614F00D9AD24 /* 地图2.png in Resources */,
 				190071E81A1737EF00165971 /* SouthAfrica.png in Resources */,
 				190071E71A1737EF00165971 /* Slovenia.png in Resources */,
 				190071E31A1737EF00165971 /* Paraguay.png in Resources */,

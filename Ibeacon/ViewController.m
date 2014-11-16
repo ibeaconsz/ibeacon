@@ -16,6 +16,7 @@
     BOOL isGetA;
     BOOL stopGetAData;
     BOOL starNavFlag;
+    CGRect locationframe;
 }
 @property NSMutableDictionary *beacons;
 @property CLLocationManager *locationManager;
@@ -33,13 +34,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.wcAddress.hidden = true;
-    self.escalatorAddress.hidden = true;
+//    
+//    self.wcAddress.hidden = true;
+//    self.escalatorAddress.hidden = true;
     [_mylocation.layer setCornerRadius:CGRectGetWidth(_mylocation.frame)/2];
-    _distanceLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 420, 300, 30)];
+    _distanceLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 460, 300, 30)];
     _distanceLabel.textColor = [UIColor blueColor];
-//    [self.view addSubview:_distanceLabel];
+    [self.view addSubview:_distanceLabel];
     
     _starNavButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _starNavButton.frame = CGRectMake(220, 450, 80, 30);
@@ -77,20 +78,25 @@
 - (IBAction)onStarNavButtonAction:(id)sender
 {
     starNavFlag = YES;
+    [_starNavButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    for (CLBeaconRegion *region in self.rangedRegions)
+    {
+        [self.locationManager startRangingBeaconsInRegion:region];
+    }
 }
 
 - (IBAction)onESCbuttonAction:(id)sender
 {
     self.escalatorAddress.hidden = NO;
     //寒星画线
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"开始导航到扶梯" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"开始导航到电梯" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     alertView.tag = 100;
-    [alertView show];
+//    [alertView show];
 
 //    LineView *line = [[LineView alloc] initWithFrame:self.view.bounds withX:_mylocation.frame.origin.x Y:_mylocation.frame.origin.y];
 //    [self.view addSubview:line];
     
-    _navLine = [[UIView alloc] initWithFrame:CGRectMake(_mylocation.frame.origin.x+13, _escalatorAddress.frame.origin.y, 3, _mylocation.frame.origin.y - _escalatorAddress.frame.origin.y)];
+    _navLine = [[UIView alloc] initWithFrame:CGRectMake(_mylocation.frame.origin.x+12, CGRectGetMaxY(_escalatorAddress.frame), 3, _mylocation.frame.origin.y - CGRectGetMaxY(_escalatorAddress.frame))];
     _navLine.backgroundColor = [UIColor blueColor];
     [self.view addSubview:_navLine];
     
@@ -122,11 +128,11 @@
 {
     [super viewDidAppear:animated];
     
-    // Start ranging when the view appears.
-    for (CLBeaconRegion *region in self.rangedRegions)
-    {
-        [self.locationManager startRangingBeaconsInRegion:region];
+    if (isGetA) {
+        _mylocation.frame = locationframe;
     }
+    // Start ranging when the view appears.
+
 }
 
 #pragma mark - Location manager delegate
@@ -179,12 +185,17 @@
             CGRect frame = _mylocation.frame;
 //            frame.origin.x = _wcAddress.center.x+80;
             if (isGetA) {
-                frame.origin.y = _wcAddress.frame.origin.y-[temp floatValue]*100 < CGRectGetMinY(_escalatorAddress.frame) ? CGRectGetMinY(_escalatorAddress.frame) : _wcAddress.frame.origin.y-[temp floatValue]*100;
-                if (frame.origin.y <= CGRectGetMinY(_escalatorAddress.frame)-20) {
+                frame.origin.y = _wcAddress.frame.origin.y-[temp floatValue]*150 < CGRectGetMinY(_escalatorAddress.frame) ? CGRectGetMinY(_escalatorAddress.frame) : _wcAddress.frame.origin.y-[temp floatValue]*150;
+                if (frame.origin.y <= CGRectGetMaxY(_escalatorAddress.frame)-30) {
                     frame.origin.y = _escalatorAddress.frame.origin.y;
                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"到达扶梯,演示结束" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     alertView.tag = 200;
                     [alertView show];
+                    locationframe = _mylocation.frame;
+                    for (CLBeaconRegion *region in self.rangedRegions)
+                    {
+                        [self.locationManager stopRangingBeaconsInRegion:region];
+                    }
                     _navLine.hidden = YES;
                     stopGetAData = YES;
                     _distanceLabel.hidden = YES;
@@ -192,21 +203,28 @@
                 }
             }
             else{
-                frame.origin.y = _wcAddress.frame.origin.y+[temp floatValue]*100 > CGRectGetMaxY(_starNavButton.frame) ? CGRectGetMaxY(_starNavButton.frame) : _wcAddress.frame.origin.y+[temp floatValue]*100;
+                frame.origin.y = _wcAddress.frame.origin.y+[temp floatValue]*150 > CGRectGetMaxY(_starNavButton.frame) ? CGRectGetMaxY(_starNavButton.frame) : _wcAddress.frame.origin.y+[temp floatValue]*150;
                 if (frame.origin.y <= _wcAddress.frame.origin.y + 40 && frame.origin.y >= _wcAddress.frame.origin.y - 40) {
                     isGetA = YES;
                     frame.origin.y = _wcAddress.frame.origin.y;
-                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"到达洗手间" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"到达H&M" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [alertView show];
                     [self initColor];
+                    locationframe = _mylocation.frame;
+                    locationframe.origin.y = _wcAddress.frame.origin.y;
                     stopGetAData = YES;
                     [_mylocation setBackgroundColor:[UIColor redColor]];
                 }
             }
             
-            
-//            frame.origin.y = 212+[temp floatValue]*100 < CGRectGetMinY(_escalatorAddress.frame) ? CGRectGetMinY(_escalatorAddress.frame) : 212+[temp floatValue]*100;
+
             _mylocation.frame = frame;
+            
+            frame = _navLine.frame;
+            frame.size.height = _mylocation.frame.origin.y - CGRectGetMaxY(_escalatorAddress.frame);
+            _navLine.frame = frame;
+            
+            
             
         }
         
