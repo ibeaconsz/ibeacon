@@ -20,6 +20,8 @@
 @property NSMutableDictionary *rangedRegions;
 
 @property (nonatomic, strong) UILabel *distanceLabel;
+@property (nonatomic, strong) UIButton *starNavButton;
+
 
 @end
 
@@ -34,14 +36,14 @@
     [_mylocation.layer setCornerRadius:CGRectGetWidth(_mylocation.frame)/2];
     _distanceLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 420, 300, 30)];
     _distanceLabel.textColor = [UIColor blueColor];
-    [self.view addSubview:_distanceLabel];
+//    [self.view addSubview:_distanceLabel];
     
-    UIButton *starNav = [UIButton buttonWithType:UIButtonTypeCustom];
-    starNav.frame = CGRectMake(220, 450, 80, 30);
-    [starNav setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [starNav setTitle:@"开始导航" forState:UIControlStateNormal];
-    [starNav addTarget:self action:@selector(onStarNavButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:starNav];
+    _starNavButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _starNavButton.frame = CGRectMake(220, 450, 80, 30);
+    [_starNavButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [_starNavButton setTitle:@"开始导航" forState:UIControlStateNormal];
+    [_starNavButton addTarget:self action:@selector(onStarNavButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_starNavButton];
     
     [_escalatorAddress addTarget:self action:@selector(onESCbuttonAction:) forControlEvents:UIControlEventTouchUpInside];
     starNavFlag = NO;
@@ -69,10 +71,10 @@
 {
     self.escalatorAddress.hidden = NO;
     //寒星画线
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"寒星画线" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"开始导航到扶梯" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    alertView.tag = 100;
     [alertView show];
-    stopGetAData = NO;
-    [_mylocation setBackgroundColor:[UIColor greenColor]];
+
     
 }
 
@@ -158,14 +160,16 @@
                 frame.origin.y = _wcAddress.frame.origin.y-[temp floatValue]*100 < CGRectGetMinY(_escalatorAddress.frame) ? CGRectGetMinY(_escalatorAddress.frame) : _wcAddress.frame.origin.y-[temp floatValue]*100;
                 if (frame.origin.y == CGRectGetMinY(_escalatorAddress.frame)) {
                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"到达扶梯,演示结束" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                    alertView.tag = 200;
                     [alertView show];
                     stopGetAData = YES;
+                    _distanceLabel.hidden = YES;
                     [_mylocation setBackgroundColor:[UIColor purpleColor]];
                 }
             }
             else{
-                frame.origin.y = _wcAddress.frame.origin.y+[temp floatValue]*100 < CGRectGetMinY(_escalatorAddress.frame) ? CGRectGetMinY(_escalatorAddress.frame) : _wcAddress.frame.origin.y+[temp floatValue]*100;
-                if (frame.origin.y <= _wcAddress.frame.origin.y + 50 && frame.origin.y >= _wcAddress.frame.origin.y - 50) {
+                frame.origin.y = _wcAddress.frame.origin.y+[temp floatValue]*100 > CGRectGetMaxY(_starNavButton.frame) ? CGRectGetMaxY(_starNavButton.frame) : _wcAddress.frame.origin.y+[temp floatValue]*100;
+                if (frame.origin.y <= _wcAddress.frame.origin.y + 40 && frame.origin.y >= _wcAddress.frame.origin.y - 40) {
                     isGetA = YES;
                     frame.origin.y = _wcAddress.frame.origin.y;
                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"到达洗手间" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -199,8 +203,14 @@
 #pragma mark UIAlertViewDelegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-//    stopGetAData = NO;
-//    [_mylocation setBackgroundColor:[UIColor greenColor]];
+    if (alertView.tag == 100) {
+        stopGetAData = NO;
+        [_mylocation setBackgroundColor:[UIColor greenColor]];
+    }
+    else if (alertView.tag == 200)
+    {
+        
+    }
 }
 
 
