@@ -55,18 +55,8 @@
 		190071EC1A1737EF00165971 /* Uruguay.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071CC1A1737EF00165971 /* Uruguay.png */; };
 		190071ED1A1737EF00165971 /* USA.png in Resources */ = {isa = PBXBuildFile; fileRef = 190071CD1A1737EF00165971 /* USA.png */; };
 		190071F01A17381200165971 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071EF1A17381200165971 /* CustomCell.m */; };
+		190071F21A17387A00165971 /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = 190071F11A17387A00165971 /* team.plist */; };
 		190071F51A1744F200165971 /* CompanyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190071F41A1744F200165971 /* CompanyDetailViewController.m */; };
-		1900720A1A177C5F00165971 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190072091A177C5F00165971 /* MeViewController.m */; };
-		1900720D1A177DB700165971 /* team.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1900720C1A177DB700165971 /* team.plist */; };
-		1900720F1A177DC900165971 /* me.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1900720E1A177DC900165971 /* me.plist */; };
-		190072121A177F5E00165971 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 190072111A177F5E00165971 /* MeTableViewCell.m */; };
-		190072141A17821800165971 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190072131A17821800165971 /* me.jpg */; };
-		190072171A178A7D00165971 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 190072161A178A7D00165971 /* LineView.m */; };
-		190072191A178E0A00165971 /* 43.pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190072181A178E0A00165971 /* 43.pic.jpg */; };
-		3719028D1A1757D600F53C0E /* APLRangingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3719028C1A1757D600F53C0E /* APLRangingViewController.m */; };
-		3719028F1A1757EA00F53C0E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */; };
-		371902911A17580700F53C0E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371902901A17580700F53C0E /* CoreLocation.framework */; };
-		371902971A1758D000F53C0E /* APLDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 371902961A1758D000F53C0E /* APLDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,24 +125,9 @@
 		190071CD1A1737EF00165971 /* USA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USA.png; sourceTree = "<group>"; };
 		190071EE1A17380B00165971 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		190071EF1A17381200165971 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		190071F11A17387A00165971 /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
 		190071F31A1744F200165971 /* CompanyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyDetailViewController.h; sourceTree = "<group>"; };
 		190071F41A1744F200165971 /* CompanyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyDetailViewController.m; sourceTree = "<group>"; };
-		190072081A177C5F00165971 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
-		190072091A177C5F00165971 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
-		1900720C1A177DB700165971 /* team.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = team.plist; sourceTree = "<group>"; };
-		1900720E1A177DC900165971 /* me.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = me.plist; path = "球队图片/me.plist"; sourceTree = "<group>"; };
-		190072101A177F5E00165971 /* MeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
-		190072111A177F5E00165971 /* MeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
-		190072131A17821800165971 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
-		190072151A178A7D00165971 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
-		190072161A178A7D00165971 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
-		190072181A178E0A00165971 /* 43.pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 43.pic.jpg; sourceTree = "<group>"; };
-		3719028B1A1757D600F53C0E /* APLRangingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLRangingViewController.h; sourceTree = "<group>"; };
-		3719028C1A1757D600F53C0E /* APLRangingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLRangingViewController.m; sourceTree = "<group>"; };
-		3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		371902901A17580700F53C0E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		371902951A1758D000F53C0E /* APLDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLDefaults.h; sourceTree = "<group>"; };
-		371902961A1758D000F53C0E /* APLDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLDefaults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				371902911A17580700F53C0E /* CoreLocation.framework in Frameworks */,
-				3719028F1A1757EA00F53C0E /* CoreBluetooth.framework in Frameworks */,
 				190071781A1731FD00165971 /* CoreGraphics.framework in Frameworks */,
 				1900717A1A1731FD00165971 /* UIKit.framework in Frameworks */,
 				190071761A1731FD00165971 /* Foundation.framework in Frameworks */,
@@ -203,8 +176,6 @@
 		190071741A1731FD00165971 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				371902901A17580700F53C0E /* CoreLocation.framework */,
-				3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */,
 				190071751A1731FD00165971 /* Foundation.framework */,
 				190071771A1731FD00165971 /* CoreGraphics.framework */,
 				190071791A1731FD00165971 /* UIKit.framework */,
@@ -216,17 +187,10 @@
 		1900717B1A1731FD00165971 /* Ibeacon */ = {
 			isa = PBXGroup;
 			children = (
-				190072151A178A7D00165971 /* LineView.h */,
-				190072161A178A7D00165971 /* LineView.m */,
-				1900720B1A177DAA00165971 /* Data */,
-				371902951A1758D000F53C0E /* APLDefaults.h */,
-				371902961A1758D000F53C0E /* APLDefaults.m */,
-				3719028B1A1757D600F53C0E /* APLRangingViewController.h */,
-				3719028C1A1757D600F53C0E /* APLRangingViewController.m */,
 				190071F11A17387A00165971 /* team.plist */,
 				190071EF1A17381200165971 /* CustomCell.m */,
 				190071EE1A17380B00165971 /* CustomCell.h */,
-				190071AD1A1737EF00165971 /* Resources */,
+				190071AD1A1737EF00165971 /* 球队图片 */,
 				190071841A1731FD00165971 /* AppDelegate.h */,
 				190071851A1731FD00165971 /* AppDelegate.m */,
 				190071871A1731FD00165971 /* Main.storyboard */,
@@ -238,10 +202,6 @@
 				190071AB1A17334500165971 /* CompanyTableViewController.m */,
 				190071F31A1744F200165971 /* CompanyDetailViewController.h */,
 				190071F41A1744F200165971 /* CompanyDetailViewController.m */,
-				190072081A177C5F00165971 /* MeViewController.h */,
-				190072091A177C5F00165971 /* MeViewController.m */,
-				190072101A177F5E00165971 /* MeTableViewCell.h */,
-				190072111A177F5E00165971 /* MeTableViewCell.m */,
 			);
 			path = Ibeacon;
 			sourceTree = "<group>";
@@ -275,11 +235,9 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		190071AD1A1737EF00165971 /* Resources */ = {
+		190071AD1A1737EF00165971 /* 球队图片 */ = {
 			isa = PBXGroup;
 			children = (
-				190072181A178E0A00165971 /* 43.pic.jpg */,
-				190072131A17821800165971 /* me.jpg */,
 				190071AE1A1737EF00165971 /* Algeria.png */,
 				190071AF1A1737EF00165971 /* Argentina.png */,
 				190071B01A1737EF00165971 /* Australia.png */,
@@ -313,17 +271,7 @@
 				190071CC1A1737EF00165971 /* Uruguay.png */,
 				190071CD1A1737EF00165971 /* USA.png */,
 			);
-			name = Resources;
 			path = "球队图片";
-			sourceTree = "<group>";
-		};
-		1900720B1A177DAA00165971 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				1900720E1A177DC900165971 /* me.plist */,
-				1900720C1A177DB700165971 /* team.plist */,
-			);
-			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,9 +356,7 @@
 				190071EC1A1737EF00165971 /* Uruguay.png in Resources */,
 				190071DD1A1737EF00165971 /* Italy.png in Resources */,
 				190071E41A1737EF00165971 /* Portugal.png in Resources */,
-				190072191A178E0A00165971 /* 43.pic.jpg in Resources */,
 				190071DB1A1737EF00165971 /* Holland.png in Resources */,
-				190072141A17821800165971 /* me.jpg in Resources */,
 				190071D01A1737EF00165971 /* Australia.png in Resources */,
 				190071D81A1737EF00165971 /* Germany.png in Resources */,
 				190071E21A1737EF00165971 /* NorthKorea.png in Resources */,
@@ -420,11 +366,10 @@
 				190071E51A1737EF00165971 /* Serbia.png in Resources */,
 				190071DC1A1737EF00165971 /* Honduras.png in Resources */,
 				190071E11A1737EF00165971 /* Nigeria.png in Resources */,
-				1900720F1A177DC900165971 /* me.plist in Resources */,
 				190071E61A1737EF00165971 /* Slovakia.png in Resources */,
 				190071E91A1737EF00165971 /* SouthKorea.png in Resources */,
 				190071DF1A1737EF00165971 /* Mexico.png in Resources */,
-				1900720D1A177DB700165971 /* team.plist in Resources */,
+				190071F21A17387A00165971 /* team.plist in Resources */,
 				190071D21A1737EF00165971 /* Cameroon.png in Resources */,
 				190071DE1A1737EF00165971 /* Japan.png in Resources */,
 				190071801A1731FD00165971 /* InfoPlist.strings in Resources */,
@@ -460,14 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1900718C1A1731FD00165971 /* ViewController.m in Sources */,
-				190072121A177F5E00165971 /* MeTableViewCell.m in Sources */,
-				190072171A178A7D00165971 /* LineView.m in Sources */,
 				190071F51A1744F200165971 /* CompanyDetailViewController.m in Sources */,
-				1900720A1A177C5F00165971 /* MeViewController.m in Sources */,
-				3719028D1A1757D600F53C0E /* APLRangingViewController.m in Sources */,
 				190071AC1A17334500165971 /* CompanyTableViewController.m in Sources */,
 				190071861A1731FD00165971 /* AppDelegate.m in Sources */,
-				371902971A1758D000F53C0E /* APLDefaults.m in Sources */,
 				190071821A1731FD00165971 /* main.m in Sources */,
 				190071F01A17381200165971 /* CustomCell.m in Sources */,
 			);
@@ -674,7 +614,6 @@
 				190071A61A1731FD00165971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		190071A71A1731FD00165971 /* Build configuration list for PBXNativeTarget "IbeaconTests" */ = {
 			isa = XCConfigurationList;
@@ -683,7 +622,6 @@
 				190071A91A1731FD00165971 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
