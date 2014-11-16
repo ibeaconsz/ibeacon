@@ -11,5 +11,6 @@
 @interface YouhuiViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (strong, nonatomic) IBOutlet UIImageView *imageView2;
 - (IBAction)getYouhui:(id)sender;
 @end
