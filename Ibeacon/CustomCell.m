@@ -17,4 +17,6 @@
 @implementation CustomCell
 
 
+- (IBAction)getAction:(id)sender {
+}
 @end

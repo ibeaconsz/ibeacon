@@ -69,9 +69,36 @@
     imagePath = [imagePath stringByAppendingString:@".png"];
     cell.image.image = [UIImage imageNamed:imagePath];
     
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    [cell.getButton.layer setMasksToBounds:YES];
+    [cell.getButton.layer setCornerRadius:10.0]; //设置矩圆角半径
+    [cell.getButton.layer setBorderWidth:1.0];   //边框宽度
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGColorRef colorref = CGColorCreate(colorSpace,(CGFloat[]){ 0, 1, 1, 1 });
+    
+    
+    [cell.getButton.layer setBorderColor:colorref];//边框颜色
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        if(self == self.navigationController.topViewController){
+            [self performSegueWithIdentifier:@"1" sender:self];
+        }
+    }else if(indexPath.row == 1){
+        if(self == self.navigationController.topViewController){
+            [self performSegueWithIdentifier:@"2" sender:self];
+        }
+    }else if(indexPath.row == 2){
+        if(self == self.navigationController.topViewController){
+            [self performSegueWithIdentifier:@"3" sender:self];
+        }
+    }
+    
 }
 
 #pragma mark - Navigation

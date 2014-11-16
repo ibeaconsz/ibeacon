@@ -10,7 +10,9 @@
 #import "APLDefaults.h"
 @import CoreLocation;
 @interface ViewController ()<CLLocationManagerDelegate>
-
+{
+    BOOL isGetA;
+}
 @property NSMutableDictionary *beacons;
 @property CLLocationManager *locationManager;
 @property NSMutableDictionary *rangedRegions;
@@ -112,10 +114,20 @@
         if (yy > 0) {
             CGRect frame = _mylocation.frame;
 //            frame.origin.x = _wcAddress.center.x+80;
-            frame.origin.y = 212+[temp floatValue]*100;
+            if (isGetA) {
+                frame.origin.y = _wcAddress.frame.origin.y-[temp floatValue]*100 < CGRectGetMinY(_escalatorAddress.frame) ? CGRectGetMinY(_escalatorAddress.frame) : _wcAddress.frame.origin.y+[temp floatValue]*100;
+            }
+            else{
+                frame.origin.y = _wcAddress.frame.origin.y+[temp floatValue]*100 < CGRectGetMinY(_escalatorAddress.frame) ? CGRectGetMinY(_escalatorAddress.frame) : _wcAddress.frame.origin.y+[temp floatValue]*100;
+                if ([temp floatValue] <= 0.2) {
+                    isGetA = YES;
+                }
+            }
+            
+            
+//            frame.origin.y = 212+[temp floatValue]*100 < CGRectGetMinY(_escalatorAddress.frame) ? CGRectGetMinY(_escalatorAddress.frame) : 212+[temp floatValue]*100;
             _mylocation.frame = frame;
             
-//            [_mylocation setTitle:[NSString stringWithFormat:@"%.2fm",beacon.accuracy] forState:UIControlStateNormal];
         }
         
 

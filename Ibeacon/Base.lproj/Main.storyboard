@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="1043" y="-788"/>
         </scene>
-        <!--View Controller - 我收藏的商家-->
+        <!--My Collect Company View Controller - 我收藏的商家-->
         <scene sceneID="ZKh-g7-GbR">
             <objects>
-                <viewController id="z3t-yU-BhX" sceneMemberID="viewController">
+                <viewController id="z3t-yU-BhX" customClass="MyCollectCompanyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kyK-Dx-kcE"/>
                         <viewControllerLayoutGuide type="bottom" id="Gjh-O3-W0Q"/>
@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="1547" y="-1010"/>
         </scene>
-        <!--View Controller - 我的兴趣点-->
+        <!--My Intertest View Controller - 我的兴趣点-->
         <scene sceneID="1pu-87-Ib5">
             <objects>
-                <viewController id="odF-Mb-Pkf" sceneMemberID="viewController">
+                <viewController id="odF-Mb-Pkf" customClass="MyIntertestViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wxb-pJ-kXR"/>
                         <viewControllerLayoutGuide type="bottom" id="vep-4I-68l"/>
@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="1301" y="-38"/>
         </scene>
-        <!--View Controller - 我收藏的优惠券-->
+        <!--My Collect Youhui Table View Controller - 我收藏的优惠券-->
         <scene sceneID="upZ-Cc-PVH">
             <objects>
-                <viewController id="hyk-Ds-nZG" sceneMemberID="viewController">
+                <viewController id="hyk-Ds-nZG" customClass="MyCollectYouhuiTableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gxd-8v-5d9"/>
                         <viewControllerLayoutGuide type="bottom" id="zJC-Ij-Imf"/>
@@ -172,23 +172,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd6-5B-51n">
-                                        <rect key="frame" x="76" y="63" width="46" height="30"/>
+                                        <rect key="frame" x="85" y="63" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="扶梯">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiO-Dq-gcI">
-                                        <rect key="frame" x="76" y="212" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiO-Dq-gcI">
+                                        <rect key="frame" x="27" y="257" width="61" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="洗手间">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9s-H9-UZf">
-                                        <rect key="frame" x="186" y="311" width="77" height="30"/>
+                                        <rect key="frame" x="153" y="314" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="我的位置">
+                                        <color key="backgroundColor" red="0.12849295550000001" green="0.43599485929999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
@@ -201,6 +203,7 @@
                     <tabBarItem key="tabBarItem" title="导航" id="gFA-nw-JME"/>
                     <connections>
                         <outlet property="escalatorAddress" destination="Xd6-5B-51n" id="u3d-7V-T1A"/>
+                        <outlet property="mylocation" destination="F9s-H9-UZf" id="xcC-AO-PPV"/>
                         <outlet property="wcAddress" destination="uiO-Dq-gcI" id="Iid-Js-MKW"/>
                     </connections>
                 </viewController>
@@ -225,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dap-3c-ZGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1545" y="800"/>
+            <point key="canvasLocation" x="2071" y="800"/>
         </scene>
         <!--Company Table View Controller - 优惠列表-->
         <scene sceneID="Bgu-nm-sGc">
@@ -236,8 +239,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="100" id="u2s-SD-eqe" customClass="CustomCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="100"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="100" id="u2s-SD-eqe" customClass="CustomCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="230" tableViewCell="u2s-SD-eqe" id="mcY-CI-dSI">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
@@ -262,14 +265,18 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKp-eQ-2a4">
-                                            <rect key="frame" x="254" y="38" width="46" height="22"/>
+                                            <rect key="frame" x="249" y="38" width="52" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="获取"/>
+                                            <connections>
+                                                <action selector="getAction:" destination="u2s-SD-eqe" eventType="touchUpInside" id="hoU-OW-Nuw"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="address" destination="wui-0E-8Ig" id="foZ-tr-KcB"/>
+                                    <outlet property="getButton" destination="uKp-eQ-2a4" id="sbi-TQ-hMu"/>
                                     <outlet property="image" destination="vlE-hy-7Hm" id="TIv-Pr-xeI"/>
                                     <outlet property="name" destination="k5t-Qd-3wo" id="Bax-Iu-eSX"/>
                                     <segue destination="f0b-eC-e4a" kind="push" identifier="companyDetailSegue" id="kMK-Tn-H2p"/>
@@ -285,7 +292,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiE-qE-MFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="800"/>
+            <point key="canvasLocation" x="1599" y="800"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="l66-nr-bWa">
@@ -300,31 +307,54 @@
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="9dC-eD-jjq"/>
                         <segue destination="iOB-S8-gil" kind="relationship" relationship="viewControllers" id="ugG-fn-hAb"/>
-                        <segue destination="tW8-GR-aCv" kind="relationship" relationship="viewControllers" id="8QC-Zz-TFy"/>
+                        <segue destination="nHd-vm-gsU" kind="relationship" relationship="viewControllers" id="Pe0-Au-JWX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qgm-0b-80O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="78" y="15"/>
         </scene>
-        <!--Navigation Controller - 优惠-->
-        <scene sceneID="mcK-Nd-5Tb">
+        <!--Youhui View Controller - 优惠列表-->
+        <scene sceneID="eeb-88-YEl">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tW8-GR-aCv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="优惠" id="geT-Ul-fmj"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Upu-kc-EJf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <viewController id="Edf-SC-y2H" customClass="YouhuiViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X0J-8G-Sxb"/>
+                        <viewControllerLayoutGuide type="bottom" id="R8R-pc-6Fs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lKS-1S-fAi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="优惠券tab-未领取.png" translatesAutoresizingMaskIntoConstraints="NO" id="TNX-bu-Orc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="669"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2S-z7-IyH">
+                                <rect key="frame" x="232" y="147" width="63" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getYouhui:" destination="Edf-SC-y2H" eventType="touchUpInside" id="Wwm-jK-oZy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="优惠券tab-已领取.png" translatesAutoresizingMaskIntoConstraints="NO" id="U7U-iL-jq7">
+                                <rect key="frame" x="-2" y="64" width="325" height="606"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="优惠列表" id="9fS-bU-smS"/>
                     <connections>
-                        <segue destination="iE1-O6-AQQ" kind="relationship" relationship="rootViewController" id="2D8-gY-MJt"/>
+                        <outlet property="imageView" destination="TNX-bu-Orc" id="17N-l2-rdt"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="klB-WX-2L3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxd-9H-hN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="547" y="800"/>
+            <point key="canvasLocation" x="943" y="1091"/>
         </scene>
         <!--Navigation Controller - 我的-->
         <scene sceneID="3Kr-1G-eno">
@@ -345,9 +375,30 @@
             </objects>
             <point key="canvasLocation" x="517" y="-788"/>
         </scene>
+        <!--Navigation Controller - 优惠-->
+        <scene sceneID="Rkj-4H-y8D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nHd-vm-gsU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="优惠" id="vGl-N2-U3f"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="574-Yr-GKL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Edf-SC-y2H" kind="relationship" relationship="rootViewController" id="2Mj-6d-TI1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46q-ST-1yv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="785"/>
+        </scene>
     </scenes>
     <resources>
         <image name="me.jpg" width="708" height="1024"/>
+        <image name="优惠券tab-已领取.png" width="640" height="1364"/>
+        <image name="优惠券tab-未领取.png" width="640" height="1364"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

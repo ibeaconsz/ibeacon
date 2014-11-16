@@ -62,7 +62,15 @@
 		190072121A177F5E00165971 /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 190072111A177F5E00165971 /* MeTableViewCell.m */; };
 		190072141A17821800165971 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190072131A17821800165971 /* me.jpg */; };
 		190072171A178A7D00165971 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 190072161A178A7D00165971 /* LineView.m */; };
-		190072191A178E0A00165971 /* 43.pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190072181A178E0A00165971 /* 43.pic.jpg */; };
+		1900721E1A183B6F00165971 /* 导航-未选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 1900721B1A183B6F00165971 /* 导航-未选中.png */; };
+		1900721F1A183B6F00165971 /* 优惠-未选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 1900721C1A183B6F00165971 /* 优惠-未选中.png */; };
+		190072201A183B6F00165971 /* 我的-未选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 1900721D1A183B6F00165971 /* 我的-未选中.png */; };
+		190072251A183DCF00165971 /* MyCollectCompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190072241A183DCF00165971 /* MyCollectCompanyViewController.m */; };
+		190072281A183DE300165971 /* MyCollectYouhuiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190072271A183DE300165971 /* MyCollectYouhuiTableViewController.m */; };
+		1900722B1A183ED200165971 /* MyIntertestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1900722A1A183ED200165971 /* MyIntertestViewController.m */; };
+		1900722E1A183F5D00165971 /* 优惠券tab-未领取.png in Resources */ = {isa = PBXBuildFile; fileRef = 1900722C1A183F5D00165971 /* 优惠券tab-未领取.png */; };
+		1900722F1A183F5D00165971 /* 优惠券tab-已领取.png in Resources */ = {isa = PBXBuildFile; fileRef = 1900722D1A183F5D00165971 /* 优惠券tab-已领取.png */; };
+		190072321A18404A00165971 /* YouhuiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190072311A18404A00165971 /* YouhuiViewController.m */; };
 		3719028D1A1757D600F53C0E /* APLRangingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3719028C1A1757D600F53C0E /* APLRangingViewController.m */; };
 		3719028F1A1757EA00F53C0E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */; };
 		371902911A17580700F53C0E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371902901A17580700F53C0E /* CoreLocation.framework */; };
@@ -146,7 +154,19 @@
 		190072131A17821800165971 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
 		190072151A178A7D00165971 /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
 		190072161A178A7D00165971 /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
-		190072181A178E0A00165971 /* 43.pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 43.pic.jpg; sourceTree = "<group>"; };
+		1900721B1A183B6F00165971 /* 导航-未选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "导航-未选中.png"; sourceTree = "<group>"; };
+		1900721C1A183B6F00165971 /* 优惠-未选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "优惠-未选中.png"; sourceTree = "<group>"; };
+		1900721D1A183B6F00165971 /* 我的-未选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的-未选中.png"; sourceTree = "<group>"; };
+		190072231A183DCF00165971 /* MyCollectCompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectCompanyViewController.h; sourceTree = "<group>"; };
+		190072241A183DCF00165971 /* MyCollectCompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectCompanyViewController.m; sourceTree = "<group>"; };
+		190072261A183DE300165971 /* MyCollectYouhuiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectYouhuiTableViewController.h; sourceTree = "<group>"; };
+		190072271A183DE300165971 /* MyCollectYouhuiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectYouhuiTableViewController.m; sourceTree = "<group>"; };
+		190072291A183ED200165971 /* MyIntertestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyIntertestViewController.h; sourceTree = "<group>"; };
+		1900722A1A183ED200165971 /* MyIntertestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyIntertestViewController.m; sourceTree = "<group>"; };
+		1900722C1A183F5D00165971 /* 优惠券tab-未领取.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "优惠券tab-未领取.png"; sourceTree = "<group>"; };
+		1900722D1A183F5D00165971 /* 优惠券tab-已领取.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "优惠券tab-已领取.png"; sourceTree = "<group>"; };
+		190072301A18404A00165971 /* YouhuiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouhuiViewController.h; sourceTree = "<group>"; };
+		190072311A18404A00165971 /* YouhuiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouhuiViewController.m; sourceTree = "<group>"; };
 		3719028B1A1757D600F53C0E /* APLRangingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLRangingViewController.h; sourceTree = "<group>"; };
 		3719028C1A1757D600F53C0E /* APLRangingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLRangingViewController.m; sourceTree = "<group>"; };
 		3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -216,6 +236,7 @@
 		1900717B1A1731FD00165971 /* Ibeacon */ = {
 			isa = PBXGroup;
 			children = (
+				190072211A183D8200165971 /* Controllers */,
 				190072151A178A7D00165971 /* LineView.h */,
 				190072161A178A7D00165971 /* LineView.m */,
 				1900720B1A177DAA00165971 /* Data */,
@@ -223,7 +244,6 @@
 				371902961A1758D000F53C0E /* APLDefaults.m */,
 				3719028B1A1757D600F53C0E /* APLRangingViewController.h */,
 				3719028C1A1757D600F53C0E /* APLRangingViewController.m */,
-				190071F11A17387A00165971 /* team.plist */,
 				190071EF1A17381200165971 /* CustomCell.m */,
 				190071EE1A17380B00165971 /* CustomCell.h */,
 				190071AD1A1737EF00165971 /* Resources */,
@@ -234,12 +254,6 @@
 				1900718B1A1731FD00165971 /* ViewController.m */,
 				1900718D1A1731FD00165971 /* Images.xcassets */,
 				1900717C1A1731FD00165971 /* Supporting Files */,
-				190071AA1A17334500165971 /* CompanyTableViewController.h */,
-				190071AB1A17334500165971 /* CompanyTableViewController.m */,
-				190071F31A1744F200165971 /* CompanyDetailViewController.h */,
-				190071F41A1744F200165971 /* CompanyDetailViewController.m */,
-				190072081A177C5F00165971 /* MeViewController.h */,
-				190072091A177C5F00165971 /* MeViewController.m */,
 				190072101A177F5E00165971 /* MeTableViewCell.h */,
 				190072111A177F5E00165971 /* MeTableViewCell.m */,
 			);
@@ -278,7 +292,7 @@
 		190071AD1A1737EF00165971 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				190072181A178E0A00165971 /* 43.pic.jpg */,
+				1900721A1A183B6600165971 /* Images */,
 				190072131A17821800165971 /* me.jpg */,
 				190071AE1A1737EF00165971 /* Algeria.png */,
 				190071AF1A1737EF00165971 /* Argentina.png */,
@@ -324,6 +338,47 @@
 				1900720C1A177DB700165971 /* team.plist */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		1900721A1A183B6600165971 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1900722C1A183F5D00165971 /* 优惠券tab-未领取.png */,
+				1900722D1A183F5D00165971 /* 优惠券tab-已领取.png */,
+				1900721B1A183B6F00165971 /* 导航-未选中.png */,
+				1900721C1A183B6F00165971 /* 优惠-未选中.png */,
+				1900721D1A183B6F00165971 /* 我的-未选中.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		190072211A183D8200165971 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				190072221A183DA100165971 /* Me */,
+				190071AA1A17334500165971 /* CompanyTableViewController.h */,
+				190071AB1A17334500165971 /* CompanyTableViewController.m */,
+				190071F31A1744F200165971 /* CompanyDetailViewController.h */,
+				190071F41A1744F200165971 /* CompanyDetailViewController.m */,
+				190072081A177C5F00165971 /* MeViewController.h */,
+				190072091A177C5F00165971 /* MeViewController.m */,
+				190072301A18404A00165971 /* YouhuiViewController.h */,
+				190072311A18404A00165971 /* YouhuiViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		190072221A183DA100165971 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				190072231A183DCF00165971 /* MyCollectCompanyViewController.h */,
+				190072241A183DCF00165971 /* MyCollectCompanyViewController.m */,
+				190072261A183DE300165971 /* MyCollectYouhuiTableViewController.h */,
+				190072271A183DE300165971 /* MyCollectYouhuiTableViewController.m */,
+				190072291A183ED200165971 /* MyIntertestViewController.h */,
+				1900722A1A183ED200165971 /* MyIntertestViewController.m */,
+			);
+			name = Me;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,15 +458,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				190071ED1A1737EF00165971 /* USA.png in Resources */,
+				1900722E1A183F5D00165971 /* 优惠券tab-未领取.png in Resources */,
 				1900718E1A1731FD00165971 /* Images.xcassets in Resources */,
 				190071CF1A1737EF00165971 /* Argentina.png in Resources */,
 				190071EC1A1737EF00165971 /* Uruguay.png in Resources */,
 				190071DD1A1737EF00165971 /* Italy.png in Resources */,
 				190071E41A1737EF00165971 /* Portugal.png in Resources */,
-				190072191A178E0A00165971 /* 43.pic.jpg in Resources */,
 				190071DB1A1737EF00165971 /* Holland.png in Resources */,
 				190072141A17821800165971 /* me.jpg in Resources */,
 				190071D01A1737EF00165971 /* Australia.png in Resources */,
+				1900722F1A183F5D00165971 /* 优惠券tab-已领取.png in Resources */,
 				190071D81A1737EF00165971 /* Germany.png in Resources */,
 				190071E21A1737EF00165971 /* NorthKorea.png in Resources */,
 				190071D61A1737EF00165971 /* England.png in Resources */,
@@ -434,7 +490,10 @@
 				190071891A1731FD00165971 /* Main.storyboard in Resources */,
 				190071EA1A1737EF00165971 /* Spain.png in Resources */,
 				190071D11A1737EF00165971 /* Brazil.png in Resources */,
+				1900721E1A183B6F00165971 /* 导航-未选中.png in Resources */,
+				190072201A183B6F00165971 /* 我的-未选中.png in Resources */,
 				190071D91A1737EF00165971 /* Ghana.png in Resources */,
+				1900721F1A183B6F00165971 /* 优惠-未选中.png in Resources */,
 				190071D41A1737EF00165971 /* CoteDIvoire.png in Resources */,
 				190071D31A1737EF00165971 /* Chile.png in Resources */,
 				190071CE1A1737EF00165971 /* Algeria.png in Resources */,
@@ -466,9 +525,13 @@
 				1900720A1A177C5F00165971 /* MeViewController.m in Sources */,
 				3719028D1A1757D600F53C0E /* APLRangingViewController.m in Sources */,
 				190071AC1A17334500165971 /* CompanyTableViewController.m in Sources */,
+				1900722B1A183ED200165971 /* MyIntertestViewController.m in Sources */,
 				190071861A1731FD00165971 /* AppDelegate.m in Sources */,
 				371902971A1758D000F53C0E /* APLDefaults.m in Sources */,
 				190071821A1731FD00165971 /* main.m in Sources */,
+				190072251A183DCF00165971 /* MyCollectCompanyViewController.m in Sources */,
+				190072321A18404A00165971 /* YouhuiViewController.m in Sources */,
+				190072281A183DE300165971 /* MyCollectYouhuiTableViewController.m in Sources */,
 				190071F01A17381200165971 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
