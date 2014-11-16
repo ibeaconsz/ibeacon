@@ -22,6 +22,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [self setBackgroundColor:[UIColor clearColor]];
         [self drawMyline:xx layerY:yy];
     }
     return self;
