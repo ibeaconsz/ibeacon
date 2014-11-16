@@ -29,7 +29,7 @@
 	self.listTeams = [[NSArray alloc] initWithContentsOfFile:plistPath];
     
     
-  
+    [self removeColor];
 }
 
 
@@ -99,6 +99,13 @@
         }
     }
     
+}
+
+//移动
+-(void)removeColor{
+    int indexICareAbout = 2;
+    
+    [[[[[self tabBarController] viewControllers] objectAtIndex: indexICareAbout] tabBarItem] setBadgeValue:nil];
 }
 
 #pragma mark - Navigation
