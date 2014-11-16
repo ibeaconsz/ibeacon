@@ -23,6 +23,7 @@
 
 @property (nonatomic, strong) UILabel *distanceLabel;
 @property (nonatomic, strong) UIButton *starNavButton;
+@property (nonatomic, strong) UIView *navLine;
 
 
 @end
@@ -77,8 +78,13 @@
     alertView.tag = 100;
     [alertView show];
 
-    LineView *line = [[LineView alloc] initWithFrame:self.view.bounds withX:_mylocation.frame.origin.x Y:_mylocation.frame.origin.y];
-    [self.view addSubview:line];
+//    LineView *line = [[LineView alloc] initWithFrame:self.view.bounds withX:_mylocation.frame.origin.x Y:_mylocation.frame.origin.y];
+//    [self.view addSubview:line];
+    
+    _navLine = [[UIView alloc] initWithFrame:CGRectMake(_mylocation.frame.origin.x+13, _escalatorAddress.frame.origin.y, 3, _mylocation.frame.origin.y - _escalatorAddress.frame.origin.y)];
+    _navLine.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:_navLine];
+    
     stopGetAData = NO;
     [_mylocation setBackgroundColor:[UIColor greenColor]];
 
@@ -165,10 +171,12 @@
 //            frame.origin.x = _wcAddress.center.x+80;
             if (isGetA) {
                 frame.origin.y = _wcAddress.frame.origin.y-[temp floatValue]*100 < CGRectGetMinY(_escalatorAddress.frame) ? CGRectGetMinY(_escalatorAddress.frame) : _wcAddress.frame.origin.y-[temp floatValue]*100;
-                if (frame.origin.y == CGRectGetMinY(_escalatorAddress.frame)) {
+                if (frame.origin.y <= CGRectGetMinY(_escalatorAddress.frame)-20) {
+                    frame.origin.y = _escalatorAddress.frame.origin.y;
                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"到达扶梯,演示结束" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     alertView.tag = 200;
                     [alertView show];
+                    _navLine.hidden = YES;
                     stopGetAData = YES;
                     _distanceLabel.hidden = YES;
                     [_mylocation setBackgroundColor:[UIColor purpleColor]];
