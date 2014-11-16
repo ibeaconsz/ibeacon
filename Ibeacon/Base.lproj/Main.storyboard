@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQX-to-to8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1301" y="-38"/>
+            <point key="canvasLocation" x="1827" y="-38"/>
         </scene>
         <!--My Collect Youhui Table View Controller - 我收藏的优惠券-->
         <scene sceneID="upZ-Cc-PVH">
@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sT2-zn-VrJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1796" y="-433"/>
+            <point key="canvasLocation" x="2322" y="-433"/>
         </scene>
         <!--View Controller - 导航-->
         <scene sceneID="ufC-wZ-h7g">
@@ -226,7 +226,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="导航" id="gFA-nw-JME"/>
+                    <navigationItem key="navigationItem" title="导航" id="nh2-Kx-g41"/>
                     <connections>
                         <outlet property="escalatorAddress" destination="Xd6-5B-51n" id="u3d-7V-T1A"/>
                         <outlet property="mylocation" destination="F9s-H9-UZf" id="xcC-AO-PPV"/>
@@ -235,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="15"/>
+            <point key="canvasLocation" x="1130" y="15"/>
         </scene>
         <!--Company Detail View Controller - 优惠详情-->
         <scene sceneID="hkZ-nI-UPN">
@@ -331,9 +331,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="9dC-eD-jjq"/>
-                        <segue destination="iOB-S8-gil" kind="relationship" relationship="viewControllers" id="ugG-fn-hAb"/>
+                        <segue destination="FVr-3E-IqE" kind="relationship" relationship="viewControllers" id="9dC-eD-jjq"/>
                         <segue destination="nHd-vm-gsU" kind="relationship" relationship="viewControllers" id="Pe0-Au-JWX"/>
+                        <segue destination="iOB-S8-gil" kind="relationship" relationship="viewControllers" id="ugG-fn-hAb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qgm-0b-80O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -386,7 +386,7 @@
         <scene sceneID="3Kr-1G-eno">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iOB-S8-gil" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="nbS-hM-v5f"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="我的40.png" id="nbS-hM-v5f"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ihz-2s-R4x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -405,7 +405,7 @@
         <scene sceneID="Rkj-4H-y8D">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nHd-vm-gsU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="优惠" id="vGl-N2-U3f"/>
+                    <tabBarItem key="tabBarItem" title="优惠" image="优惠券40.png" id="vGl-N2-U3f"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="574-Yr-GKL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -420,12 +420,34 @@
             </objects>
             <point key="canvasLocation" x="466" y="785"/>
         </scene>
+        <!--Navigation Controller - 导航-->
+        <scene sceneID="VuL-cc-nyf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FVr-3E-IqE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="导航" image="导航40(1).png" id="gFA-nw-JME"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wfy-tY-CSV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="QhK-Gf-y7D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5g-bK-Pm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="15"/>
+        </scene>
     </scenes>
     <resources>
         <image name="me.jpg" width="708" height="1024"/>
+        <image name="优惠券40.png" width="20" height="20"/>
         <image name="优惠券tab-已领取.png" width="640" height="1364"/>
         <image name="优惠券tab-未领取.png" width="640" height="1364"/>
         <image name="地图.png" width="640" height="1096"/>
+        <image name="导航40(1).png" width="20" height="20"/>
+        <image name="我的40.png" width="20" height="20"/>
         <image name="我的profile.png" width="635" height="306"/>
         <image name="我的优惠券2.jpg" width="640" height="775"/>
         <image name="我的兴趣点.png" width="649" height="1005"/>

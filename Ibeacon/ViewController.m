@@ -49,8 +49,8 @@
     starNavFlag = NO;
     [self initIbeacon];
     
-    
-    
+
+      
 }
 
 //颜色
