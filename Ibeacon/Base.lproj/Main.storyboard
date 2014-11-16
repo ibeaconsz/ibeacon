@@ -193,6 +193,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="地图.png" translatesAutoresizingMaskIntoConstraints="NO" id="VKe-HS-Ftq">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="485"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd6-5B-51n">
                                         <rect key="frame" x="85" y="63" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -421,6 +425,7 @@
         <image name="me.jpg" width="708" height="1024"/>
         <image name="优惠券tab-已领取.png" width="640" height="1364"/>
         <image name="优惠券tab-未领取.png" width="640" height="1364"/>
+        <image name="地图.png" width="640" height="1096"/>
         <image name="我的profile.png" width="635" height="306"/>
         <image name="我的优惠券2.jpg" width="640" height="775"/>
         <image name="我的兴趣点.png" width="649" height="1005"/>
