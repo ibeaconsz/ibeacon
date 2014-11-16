@@ -59,7 +59,7 @@
 
 //颜色
 -(void)initColor{
-    int indexICareAbout = 2;
+    int indexICareAbout = 1;
     
     NSString *badgeValue = @"10";
     
@@ -70,7 +70,7 @@
 
 //移动
 -(void)removeColor{
-    int indexICareAbout = 2;
+    int indexICareAbout = 1;
     
     [[[[[self tabBarController] viewControllers] objectAtIndex: indexICareAbout] tabBarItem] setBadgeValue:nil];
 }
@@ -205,7 +205,7 @@
             }
             else{
                 frame.origin.y = _wcAddress.frame.origin.y+[temp floatValue]*150 > CGRectGetMaxY(_starNavButton.frame) ? CGRectGetMaxY(_starNavButton.frame) : _wcAddress.frame.origin.y+[temp floatValue]*150;
-                if (frame.origin.y <= _wcAddress.frame.origin.y + 40 && frame.origin.y >= _wcAddress.frame.origin.y - 40) {
+                if (frame.origin.y <= _wcAddress.frame.origin.y + 60 && frame.origin.y >= _wcAddress.frame.origin.y - 60) {
                     isGetA = YES;
                     frame.origin.y = _wcAddress.frame.origin.y;
                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"到达H&M" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];

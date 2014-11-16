@@ -28,9 +28,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self removeColor];
     
     
+}
+
+//移动
+-(void)removeColor{
+    int indexICareAbout = 1;
     
+    [[[[[self tabBarController] viewControllers] objectAtIndex: indexICareAbout] tabBarItem] setBadgeValue:nil];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
