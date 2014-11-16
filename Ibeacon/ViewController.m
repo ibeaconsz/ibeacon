@@ -60,6 +60,15 @@
     NSString *badgeValue = @"10";
     
     [[[[[self tabBarController] viewControllers] objectAtIndex: indexICareAbout] tabBarItem] setBadgeValue:badgeValue];
+    
+    
+}
+
+//移动
+-(void)removeColor{
+    int indexICareAbout = 2;
+    
+    [[[[[self tabBarController] viewControllers] objectAtIndex: indexICareAbout] tabBarItem] setBadgeValue:nil];
 }
 
 - (IBAction)onStarNavButtonAction:(id)sender
