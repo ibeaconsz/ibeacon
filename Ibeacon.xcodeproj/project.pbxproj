@@ -71,6 +71,10 @@
 		1900722E1A183F5D00165971 /* 优惠券tab-未领取.png in Resources */ = {isa = PBXBuildFile; fileRef = 1900722C1A183F5D00165971 /* 优惠券tab-未领取.png */; };
 		1900722F1A183F5D00165971 /* 优惠券tab-已领取.png in Resources */ = {isa = PBXBuildFile; fileRef = 1900722D1A183F5D00165971 /* 优惠券tab-已领取.png */; };
 		190072321A18404A00165971 /* YouhuiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 190072311A18404A00165971 /* YouhuiViewController.m */; };
+		190072351A184B9C00165971 /* 我的兴趣点.png in Resources */ = {isa = PBXBuildFile; fileRef = 190072331A184B9C00165971 /* 我的兴趣点.png */; };
+		190072361A184B9C00165971 /* 我的优惠券2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 190072341A184B9C00165971 /* 我的优惠券2.jpg */; };
+		190072381A184CD500165971 /* 我的profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 190072371A184CD500165971 /* 我的profile.png */; };
+		1900723A1A184D6200165971 /* 我的收藏商店.png in Resources */ = {isa = PBXBuildFile; fileRef = 190072391A184D6200165971 /* 我的收藏商店.png */; };
 		3719028D1A1757D600F53C0E /* APLRangingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3719028C1A1757D600F53C0E /* APLRangingViewController.m */; };
 		3719028F1A1757EA00F53C0E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */; };
 		371902911A17580700F53C0E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371902901A17580700F53C0E /* CoreLocation.framework */; };
@@ -167,6 +171,10 @@
 		1900722D1A183F5D00165971 /* 优惠券tab-已领取.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "优惠券tab-已领取.png"; sourceTree = "<group>"; };
 		190072301A18404A00165971 /* YouhuiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouhuiViewController.h; sourceTree = "<group>"; };
 		190072311A18404A00165971 /* YouhuiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouhuiViewController.m; sourceTree = "<group>"; };
+		190072331A184B9C00165971 /* 我的兴趣点.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的兴趣点.png"; sourceTree = "<group>"; };
+		190072341A184B9C00165971 /* 我的优惠券2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "我的优惠券2.jpg"; sourceTree = "<group>"; };
+		190072371A184CD500165971 /* 我的profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的profile.png"; sourceTree = "<group>"; };
+		190072391A184D6200165971 /* 我的收藏商店.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的收藏商店.png"; sourceTree = "<group>"; };
 		3719028B1A1757D600F53C0E /* APLRangingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLRangingViewController.h; sourceTree = "<group>"; };
 		3719028C1A1757D600F53C0E /* APLRangingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLRangingViewController.m; sourceTree = "<group>"; };
 		3719028E1A1757EA00F53C0E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -343,6 +351,10 @@
 		1900721A1A183B6600165971 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				190072391A184D6200165971 /* 我的收藏商店.png */,
+				190072371A184CD500165971 /* 我的profile.png */,
+				190072331A184B9C00165971 /* 我的兴趣点.png */,
+				190072341A184B9C00165971 /* 我的优惠券2.jpg */,
 				1900722C1A183F5D00165971 /* 优惠券tab-未领取.png */,
 				1900722D1A183F5D00165971 /* 优惠券tab-已领取.png */,
 				1900721B1A183B6F00165971 /* 导航-未选中.png */,
@@ -457,19 +469,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190072381A184CD500165971 /* 我的profile.png in Resources */,
 				190071ED1A1737EF00165971 /* USA.png in Resources */,
 				1900722E1A183F5D00165971 /* 优惠券tab-未领取.png in Resources */,
+				190072361A184B9C00165971 /* 我的优惠券2.jpg in Resources */,
 				1900718E1A1731FD00165971 /* Images.xcassets in Resources */,
 				190071CF1A1737EF00165971 /* Argentina.png in Resources */,
 				190071EC1A1737EF00165971 /* Uruguay.png in Resources */,
 				190071DD1A1737EF00165971 /* Italy.png in Resources */,
 				190071E41A1737EF00165971 /* Portugal.png in Resources */,
 				190071DB1A1737EF00165971 /* Holland.png in Resources */,
+				1900723A1A184D6200165971 /* 我的收藏商店.png in Resources */,
 				190072141A17821800165971 /* me.jpg in Resources */,
 				190071D01A1737EF00165971 /* Australia.png in Resources */,
 				1900722F1A183F5D00165971 /* 优惠券tab-已领取.png in Resources */,
 				190071D81A1737EF00165971 /* Germany.png in Resources */,
 				190071E21A1737EF00165971 /* NorthKorea.png in Resources */,
+				190072351A184B9C00165971 /* 我的兴趣点.png in Resources */,
 				190071D61A1737EF00165971 /* England.png in Resources */,
 				190071D51A1737EF00165971 /* Denmark.png in Resources */,
 				190071EB1A1737EF00165971 /* Switzerland.png in Resources */,

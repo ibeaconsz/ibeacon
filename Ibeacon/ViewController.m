@@ -34,6 +34,18 @@
     _distanceLabel.textColor = [UIColor blueColor];
     [self.view addSubview:_distanceLabel];
     [self initIbeacon];
+    
+    
+    
+}
+
+//颜色
+-(void)initColor{
+    int indexICareAbout = 2;
+    
+    NSString *badgeValue = @"10";
+    
+    [[[[[self tabBarController] viewControllers] objectAtIndex: indexICareAbout] tabBarItem] setBadgeValue:badgeValue];
 }
 
 - (void)initIbeacon
