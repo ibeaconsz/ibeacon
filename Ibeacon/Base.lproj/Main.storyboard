@@ -357,7 +357,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2S-z7-IyH">
-                                <rect key="frame" x="232" y="147" width="63" height="33"/>
+                                <rect key="frame" x="31" y="86" width="264" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -366,10 +366,6 @@
                                     <action selector="getYouhui:" destination="Edf-SC-y2H" eventType="touchUpInside" id="Wwm-jK-oZy"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="优惠券tab-已领取.png" translatesAutoresizingMaskIntoConstraints="NO" id="U7U-iL-jq7">
-                                <rect key="frame" x="-2" y="64" width="325" height="606"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -443,7 +439,6 @@
     <resources>
         <image name="me.jpg" width="708" height="1024"/>
         <image name="优惠券40.png" width="20" height="20"/>
-        <image name="优惠券tab-已领取.png" width="640" height="1364"/>
         <image name="优惠券tab-未领取.png" width="640" height="1364"/>
         <image name="地图.png" width="640" height="1096"/>
         <image name="导航40(1).png" width="20" height="20"/>

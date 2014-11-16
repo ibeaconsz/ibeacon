@@ -30,6 +30,11 @@
     
     
     
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    self.imageView.image = [UIImage imageNamed:@"优惠券tab-未领取"];
 }
 
 
@@ -39,18 +44,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)getYouhui:(id)sender {
-    self.imageView.hidden=true;
+
+    self.imageView.image = [UIImage imageNamed:@"优惠券tab-已领取"];
 }
 @end
