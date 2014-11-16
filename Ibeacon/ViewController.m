@@ -170,6 +170,7 @@
                     frame.origin.y = _wcAddress.frame.origin.y;
                     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"到达洗手间" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [alertView show];
+                    [self initColor];
                     stopGetAData = YES;
                     [_mylocation setBackgroundColor:[UIColor redColor]];
                 }
