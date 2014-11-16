@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "APLDefaults.h"
+#import "LineView.h"
+
 @import CoreLocation;
 @interface ViewController ()<CLLocationManagerDelegate,UIAlertViewDelegate>
 {
@@ -71,6 +73,9 @@
     //寒星画线
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"寒星画线" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alertView show];
+    
+    LineView *line = [[LineView alloc] initWithFrame:self.view.bounds withX:_mylocation.frame.origin.x Y:_mylocation.frame.origin.y];
+    [self.view addSubview:line];
     stopGetAData = NO;
     [_mylocation setBackgroundColor:[UIColor greenColor]];
     

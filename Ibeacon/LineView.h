@@ -10,4 +10,6 @@
 
 @interface LineView : UIView
 
+- (id)initWithFrame:(CGRect)frame withX:(CGFloat)xx Y:(CGFloat)yy;
+
 @end

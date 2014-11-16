@@ -209,7 +209,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9s-H9-UZf">
-                                        <rect key="frame" x="153" y="314" width="25" height="25"/>
+                                        <rect key="frame" x="144" y="474" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.12849295550000001" green="0.43599485929999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
