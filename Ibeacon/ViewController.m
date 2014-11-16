@@ -196,6 +196,7 @@
                     {
                         [self.locationManager stopRangingBeaconsInRegion:region];
                     }
+                    [_starNavButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
                     _navLine.hidden = YES;
                     stopGetAData = YES;
                     _distanceLabel.hidden = YES;
